@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0e13"/>
+      <stop offset="0.6" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#05070a"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.72" cy="0.2" r="0.14">
+      <stop offset="0" stop-color="#e9f2c9" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#e9f2c9" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#e9f2c9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171c22"/>
+      <stop offset="1" stop-color="#0b0e12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#moon)"/>
+  <rect y="780" width="1600" height="220" fill="#0a0d11"/>
+  <g opacity="0.9">
+    <path d="M0 780 L140 640 L260 780 L420 580 L560 780 L760 540 L900 780 L1100 620 L1240 780 L1420 600 L1600 780 L1600 1000 L0 1000 Z" fill="#0c1015"/>
+  </g>
+  <g fill="#171c22" stroke="#232a31" stroke-width="2">
+    <rect x="250" y="330" width="300" height="450"/>
+    <rect x="760" y="250" width="360" height="530"/>
+    <rect x="1220" y="380" width="240" height="400"/>
+  </g>
+  <g fill="#d7ff3f">
+    <rect x="290" y="380" width="30" height="60" opacity="0.85"/>
+    <rect x="350" y="420" width="30" height="60" opacity="0.55"/>
+    <rect x="410" y="370" width="30" height="60" opacity="0.9"/>
+    <rect x="470" y="450" width="30" height="60" opacity="0.5"/>
+    <rect x="800" y="300" width="34" height="70" opacity="0.9"/>
+    <rect x="870" y="340" width="34" height="70" opacity="0.6"/>
+    <rect x="940" y="290" width="34" height="70" opacity="0.85"/>
+    <rect x="1010" y="360" width="34" height="70" opacity="0.55"/>
+    <rect x="1260" y="420" width="28" height="56" opacity="0.8"/>
+    <rect x="1320" y="460" width="28" height="56" opacity="0.5"/>
+  </g>
+  <g fill="#ff9e3d">
+    <rect x="290" y="450" width="30" height="60" opacity="0.7"/>
+    <rect x="350" y="490" width="30" height="60" opacity="0.45"/>
+    <rect x="470" y="520" width="30" height="60" opacity="0.4"/>
+    <rect x="800" y="380" width="34" height="70" opacity="0.7"/>
+    <rect x="940" y="370" width="34" height="70" opacity="0.6"/>
+  </g>
+  <rect x="720" y="640" width="440" height="140" fill="#12161b"/>
+  <rect x="790" y="640" width="300" height="140" fill="#0d1115"/>
+  <g fill="#d7ff3f" opacity="0.85">
+    <rect x="810" y="660" width="26" height="40"/>
+    <rect x="860" y="680" width="26" height="40" opacity="0.6"/>
+    <rect x="910" y="650" width="26" height="40"/>
+    <rect x="960" y="690" width="26" height="40" opacity="0.55"/>
+    <rect x="1010" y="665" width="26" height="40" opacity="0.8"/>
+  </g>
+  <text x="800" y="940" font-family="monospace" font-size="26" fill="#76807a" letter-spacing="8">PLACEHOLDER — ZYRIX TOWER · REPLACE WITH GENERATED PLATE</text>
+</svg>
