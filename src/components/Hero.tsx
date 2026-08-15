@@ -2,10 +2,10 @@ import Link from "next/link";
 import Shape from "@/components/Shape";
 
 const chapters = [
-  { num: "01", title: "Work", desc: "Selected builds", focus: 1, href: "/work" },
-  { num: "02", title: "Studio", desc: "Who we are", focus: 2, href: "/studio" },
-  { num: "03", title: "Services", desc: "Bots · 3D · AI · SaaS", focus: 3, href: "/services" },
-  { num: "04", title: "Contact", desc: "Start a project", focus: 4, href: "/contact" },
+  { num: "01", title: "Work", desc: "Selected builds", focus: 1, href: "#work" },
+  { num: "02", title: "Studio", desc: "Who we are", focus: 2, href: "#studio" },
+  { num: "03", title: "Services", desc: "Bots · 3D · AI · SaaS", focus: 3, href: "#services" },
+  { num: "04", title: "Contact", desc: "Start a project", focus: 4, href: "#contact" },
 ];
 
 export default function Hero() {
@@ -26,7 +26,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <Link className="peek" href="/work" data-cur>
+      <Link className="peek" href="#work" data-cur>
         <span className="peek-fr" />
         <span className="peek-play" aria-hidden="true">
           <svg viewBox="0 0 46 46" fill="none">

@@ -26,7 +26,7 @@ export default function Services() {
 
       <div className="cur">
         {services.map((s) => (
-          <Link key={s.k} href="/services" className="les les--big" data-cur data-focus={4} data-hover="0.7">
+          <Link key={s.k} href="#services" className="les les--big" data-cur data-focus={4} data-hover="0.7">
             <span className="k">{s.k}</span>
             <h3>{s.title}</h3>
             <p>{s.desc}</p>

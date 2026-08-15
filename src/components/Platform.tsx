@@ -49,7 +49,7 @@ export default function Platform() {
 
       <div className="pl">
         {stack.map((p) => (
-          <Link key={p.k} href="/services" className="pl-row" data-cur data-hover="0.7">
+          <Link key={p.k} href="#services" className="pl-row" data-cur data-hover="0.7">
             <span className="pl-k">{p.k}</span>
             <div className="pl-main">
               <h3 className="display">{p.name}</h3>

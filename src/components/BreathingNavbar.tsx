@@ -6,10 +6,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import Shape from "@/components/Shape";
 
 const links = [
-  { href: "/work", label: "Work" },
-  { href: "/studio", label: "Studio" },
-  { href: "/zyrix", label: "Zyrix" },
-  { href: "/services", label: "Services" },
+  { href: "#work", label: "Work" },
+  { href: "#studio", label: "Studio" },
+  { href: "#vision", label: "Zyrix" },
+  { href: "#services", label: "Services" },
 ];
 
 export default function BreathingNavbar() {
@@ -48,7 +48,7 @@ export default function BreathingNavbar() {
         </nav>
 
         <div className="bnav-actions">
-          <Link href="/contact" className="bnav-cta" data-cur data-hover="0.5">
+          <Link href="mailto:imzyrixx@gmail.com" className="bnav-cta" data-cur data-hover="0.5">
             <Shape kind="star" size={12} />
             Let&apos;s talk
           </Link>
@@ -91,7 +91,7 @@ export default function BreathingNavbar() {
                 </Link>
               </motion.div>
             ))}
-            <Link href="/contact" className="bnav-cta bnav-drawer-cta" onClick={() => setOpen(false)}>
+            <Link href="mailto:imzyrixx@gmail.com" className="bnav-cta bnav-drawer-cta" onClick={() => setOpen(false)}>
               <Shape kind="star" size={12} />
               Let&apos;s talk
             </Link>

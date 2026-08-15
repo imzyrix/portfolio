@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { projects } from "@/data/projects";
 import Shape from "@/components/Shape";
 
@@ -15,9 +14,8 @@ export default function Work() {
 
       <div className="w-list">
         {projects.map((card) => (
-          <Link
+          <div
             key={card.slug}
-            href={`/work/${card.slug}`}
             className="w-row"
             data-cur
             data-focus={card.focus}
@@ -39,17 +37,17 @@ export default function Work() {
                 <path d="M8 6h12v12M20 6L6 20" stroke="currentColor" strokeWidth="1.4" />
               </svg>
             </span>
-          </Link>
+          </div>
         ))}
       </div>
 
-      <Link href="/work" className="w-more" data-cur data-hover="0.5">
+      <a href="#work" className="w-more" data-cur data-hover="0.5">
         <span>All work</span>
         <Shape kind="star" size={13} className="shp--muted" />
         <svg viewBox="0 0 26 26" fill="none" aria-hidden="true">
           <path d="M8 6h12v12M20 6L6 20" stroke="currentColor" strokeWidth="1.4" />
         </svg>
-      </Link>
+      </a>
 
       <div className="fg" data-fg="work" aria-hidden="true">
         <span className="fg-el fg-el--sway" data-fg-in="left">

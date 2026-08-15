@@ -6626,3 +6626,127 @@ h3 {
   --lt-accent: #647d00;
   --lt-band-bg: #0c0e0a;
 }
+
+/* corner session counter */
+.corner-count {
+  position: fixed;
+  right: var(--pad);
+  bottom: var(--pad);
+  z-index: 60;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.corner-count b {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: var(--lime);
+  font-variant-numeric: tabular-nums;
+}
+
+.corner-count span {
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.corner-count b::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-left: 8px;
+  border-radius: 50%;
+  background: var(--lime);
+  vertical-align: middle;
+  animation: corner-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes corner-pulse {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 1; }
+}
+
+/* tighter zyrix caption */
+.peek-cap {
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.peek-cap b {
+  letter-spacing: 0.18em;
+}
+
+/* loader — more life */
+@keyframes pre-mark-in {
+  from { transform: scale(0.55); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pre-mark-pulse {
+  0%, 100% { border-color: var(--line); box-shadow: 0 0 0 0 rgba(215, 255, 63, 0); }
+  50% { border-color: rgba(215, 255, 63, 0.55); box-shadow: 0 0 26px 2px rgba(215, 255, 63, 0.14); }
+}
+
+@keyframes pre-jp-in {
+  from { opacity: 0; letter-spacing: 0.85em; }
+  to { opacity: 1; letter-spacing: 0.5em; }
+}
+
+@keyframes pre-meta-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+.pre-mark {
+  animation: pre-mark-in 0.9s var(--ease-out) both, pre-mark-pulse 2.2s ease-in-out 0.5s infinite;
+}
+
+.pre-jp {
+  animation: pre-jp-in 1.1s var(--ease-out) 0.15s both;
+}
+
+.pre-bar i {
+  box-shadow: 0 0 12px rgba(215, 255, 63, 0.55);
+}
+
+.pre-meta {
+  animation: pre-meta-in 0.7s var(--ease-out) 0.35s both;
+}
+
+@keyframes pre-out {
+  to { opacity: 0; transform: translateY(-16px); }
+}
+
+#pre.done .pre-in {
+  animation: pre-out 0.7s var(--ease) both;
+}
+
+/* peek play — gentle float */
+@keyframes peek-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+.peek-play {
+  animation: peek-float 5.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .corner-count b::after,
+  .pre-mark,
+  .pre-jp,
+  .pre-meta,
+  .peek-play {
+    animation: none;
+  }
+
+  #pre.done .pre-in {
+    animation: none;
+  }
+}

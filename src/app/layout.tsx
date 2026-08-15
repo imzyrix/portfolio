@@ -4,7 +4,7 @@ import { MotionConfig } from "framer-motion";
 import "./globals.css";
 import SiteChrome from "@/components/SiteChrome";
 import BreathingNavbar from "@/components/BreathingNavbar";
-import CornerMenu from "@/components/CornerMenu";
+import CornerCounter from "@/components/CornerCounter";
 import CueSound from "@/components/CueSound";
 
 const spaceGrotesk = Space_Grotesk({
@@ -39,7 +39,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <MotionConfig reducedMotion="user">
           <SiteChrome />
           <BreathingNavbar />
-          <CornerMenu />
           <div id="grain" aria-hidden="true" />
           <div id="vignette" aria-hidden="true" />
           <div id="fg-sky" aria-hidden="true" />
@@ -48,6 +47,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             {children}
           </div>
           <CueSound />
+          <CornerCounter />
         </MotionConfig>
       </body>
     </html>

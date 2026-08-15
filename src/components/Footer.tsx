@@ -39,19 +39,19 @@ export default function Footer() {
           <h4>Chapters</h4>
           <ul>
             <li>
-              <Link href="/work">Work</Link>
+              <Link href="#work">Work</Link>
             </li>
             <li>
-              <Link href="/studio">Studio</Link>
+              <Link href="#studio">Studio</Link>
             </li>
             <li>
-              <Link href="/services">Services</Link>
+              <Link href="#services">Services</Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link href="#contact">Contact</Link>
             </li>
             <li>
-              <Link href="/zyrix">The founder</Link>
+              <Link href="#vision">The founder</Link>
             </li>
           </ul>
         </div>
@@ -74,10 +74,10 @@ export default function Footer() {
           <h4>Studio</h4>
           <ul>
             <li>
-              <Link href="/contact">Available worldwide</Link>
+              <a href="mailto:imzyrixx@gmail.com">Available worldwide</a>
             </li>
             <li>
-              <Link href="/studio">Remote-first</Link>
+              <a href="#studio">Remote-first</a>
             </li>
           </ul>
         </div>
