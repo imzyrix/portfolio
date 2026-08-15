@@ -30,20 +30,6 @@ export default function ServicesPage() {
       <section className="pg-svc">
         {disciplines.map((d) => (
           <div key={d.k} className="svc" data-rv="up">
-            {/* ORIGINAL (preserved, not deleted — disabled by comment):
-            <div className="svc-head">
-              <span className="k">{d.k}</span>
-              <h3>{d.title}</h3>
-              <span className="t">{d.t}</span>
-            </div>
-            <p className="body">{d.desc}</p>
-            <ul className="svc-what">
-              {d.what.map((w) => (
-                <li key={w}>{w}</li>
-              ))}
-            </ul>
-            <span className="bar" aria-hidden="true" />
-            */}
             <span className="svc-ghost" aria-hidden="true">
               {d.k}
             </span>

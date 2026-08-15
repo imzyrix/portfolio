@@ -4922,7 +4922,7 @@ h3 {
   }
 }
 
-/* ══ RS PASS — /work showcase (editorial-portfolio-chapters) ══
+/* ══ /work — showcase ══
    Ghost index numerals, ambient per-project glow, corner markers.
    Extends existing system: ink/bone/lime, hairline rules, no heavy shadows. */
 .display em,
@@ -5089,7 +5089,7 @@ h3 {
   }
 }
 
-/* ══ RS PASS — /services engagement ledger ══
+/* ══ /services — engagement ledger ══
    Ghost numerals, split headline/checklist columns, activated .svc .bar sweep. */
 .svc {
   position: relative;
@@ -5256,7 +5256,7 @@ h3 {
   }
 }
 
-/* ══ RS PASS — /contact split conversion layout (glass-dark-ui, retuned ink/lime) ══ */
+/* ══ /contact — split conversion layout ══ */
 .pg-contact-rs {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
@@ -5436,7 +5436,7 @@ h3 {
   }
 }
 
-/* ══ RS PASS — /studio credibility (manifesto + canvas + principles) ══ */
+/* ══ /studio — credibility ══ */
 .pg-canvas {
   margin: clamp(64px, 12vh, 140px) 0;
   text-align: center;
@@ -5561,7 +5561,7 @@ h3 {
   }
 }
 
-/* ══ RS PASS — /zyrix brand page (KV lockup + statement + service scale) ══ */
+/* ══ /zyrix — brand page ══ */
 .zy-kv-lock {
   position: absolute;
   left: clamp(24px, 6vw, 96px);
@@ -5666,100 +5666,3 @@ h3 {
   }
 }
 
-/* ══ RS PASS — /zyrix brand page (KV lockup + service differentiation) ══ */
-.zy-kv-lock {
-  position: absolute;
-  left: clamp(24px, 6vw, 96px);
-  bottom: clamp(40px, 8vh, 90px);
-  z-index: 2;
-}
-
-.zy-kv-name {
-  margin: 0;
-  font-family: var(--font-space-grotesk), sans-serif;
-  font-size: clamp(56px, 13vw, 190px);
-  font-weight: 600;
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-shadow: 0 4px 70px rgba(3, 6, 8, 0.9), 0 0 44px rgba(3, 6, 8, 0.65);
-}
-
-.zy-kv-role {
-  margin: clamp(12px, 2vh, 20px) 0 0;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.34em;
-  text-transform: uppercase;
-  color: var(--lime);
-  text-shadow: 0 2px 24px rgba(3, 6, 8, 0.95);
-}
-
-.zy-scroll {
-  left: 50%;
-  translate: -50% 0;
-  bottom: clamp(32px, 6vh, 56px);
-  writing-mode: horizontal-tb;
-}
-
-.zy-en {
-  font-size: clamp(15px, 1.5vw, 19px);
-  letter-spacing: 0.12em;
-  color: var(--bone-dim);
-  max-width: 42ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.zy-svc-n {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  color: var(--lime-dim);
-  transition: color 0.4s;
-}
-
-.zy-svc-row:hover .zy-svc-n {
-  color: var(--lime);
-}
-
-.zy-svc-t {
-  font-size: clamp(28px, 3.6vw, 60px);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-}
-
-.zy-svc-d {
-  font-size: 15px;
-  line-height: 1.65;
-  color: var(--bone-dim);
-}
-
-.zy-svc-row {
-  align-items: center;
-}
-
-@media (max-width: 640px) {
-  .zy-kv-lock {
-    left: var(--pad);
-    bottom: clamp(72px, 14vh, 110px);
-  }
-
-  .zy-kv-name {
-    font-size: clamp(48px, 17vw, 96px);
-  }
-
-  .zy-scroll {
-    display: none;
-  }
-
-  .zy-svc-row {
-    grid-template-columns: 40px minmax(0, 1fr);
-    align-items: start;
-    gap: 16px;
-  }
-
-  .zy-svc-d {
-    grid-column: 2;
-  }
-}

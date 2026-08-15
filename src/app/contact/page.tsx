@@ -54,28 +54,6 @@ export default function ContactPage() {
       </section>
 
       <section className="pg-contact-rs" data-rv="up">
-        {/* ORIGINAL (preserved, not deleted — disabled by comment):
-        <div className="pg-contact-grid">
-          <div>
-            <h3>Studio</h3>
-            <p>
-              Remote-first, worldwide.
-              <br />
-              Available for new engagements.
-            </p>
-          </div>
-          <div>
-            <h3>Reach</h3>
-            <p>
-              <a href="mailto:imzyrixx@gmail.com" className="underline-link" data-cur>
-                imzyrixx@gmail.com
-              </a>
-              <br />
-              Replies within 24 hours.
-            </p>
-          </div>
-        </div>
-        */}
         <div className="pc-left">
           <p className="pc-promise">
             The number we agree on is the number you pay — fixed up front, no hours,

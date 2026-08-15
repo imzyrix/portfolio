@@ -103,8 +103,6 @@ export default function StudioPage() {
       <section className="pg-list pg-list-rs">
         {principles.map((pr) => (
           <div key={pr.k} className="les" data-rv="up">
-            {/* ORIGINAL (preserved, not deleted — disabled by comment): */}
-            {/* <span className="k">{pr.k}</span> */}
             <span className="les-ghost" aria-hidden="true">
               {pr.k}
             </span>

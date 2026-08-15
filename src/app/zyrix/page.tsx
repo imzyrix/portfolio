@@ -49,12 +49,6 @@ export default function ZyrixPage() {
           scroll to explore
           <i>→</i>
         </p>
-        {/* ORIGINAL (preserved, not deleted — disabled by comment):
-        <p className="zy-kv-meta" data-rv="fade">
-          <Shape kind="star" size={13} className="shp--float" />
-          ZYRIX — FOUNDER & LEAD BUILDER
-        </p>
-        */}
       </section>
 
       <section className="zy-sec" id="z-line" data-cam>
@@ -63,13 +57,6 @@ export default function ZyrixPage() {
             <Shape size={14} />
             The line — 01
           </p>
-          {/* ORIGINAL (preserved, not deleted — disabled by comment):
-          <h1 className="zy-stmt">
-            <TextReveal>
-              The work, in <em>reverse.</em>
-            </TextReveal>
-          </h1>
-          */}
           <h2 className="zy-stmt">
             <TextReveal>
               The work, in <em>reverse.</em>

@@ -78,11 +78,6 @@ export default function WorkPage() {
               <span className="card-num" aria-hidden="true">
                 {p.num}
               </span>
-              {/* ORIGINAL (preserved, not deleted — disabled by comment): */}
-              {/* <span className="card-lab">
-                <b>{p.title}</b>
-                <span className="tag">{p.tag}</span>
-              </span> */}
               <span className="card-lab">
                 <b>{p.title}</b>
                 <span className="tag">{p.tag}</span>
@@ -95,7 +90,6 @@ export default function WorkPage() {
             </div>
             <div className="card-meta">
               <span>{p.role}</span>
-              {/* ORIGINAL (preserved, not deleted — disabled by comment): <span>{p.num}</span> */}
               <span>{p.year}</span>
             </div>
           </Link>
