@@ -29,22 +29,22 @@ const faqs = [
 
 export default function ContactPage() {
   return (
-    <main className="page-content">
-      <section className="pg-hero fin" data-rv="up">
-        <p className="eyebrow" data-rv="fade">
-          <Shape size={15} className="shp--spin" />
+    <main className="page-content lt">
+      <section className="lt-hero" data-rv="up">
+        <p className="lt-eyebrow" data-rv="fade">
           07 — The afterlight
         </p>
-        <h1 className="display">
-          <span className="mask-line"><span>Let&apos;s build</span></span>
-          <span className="mask-line"><span><em>something.</em></span></span>
+        <h1 className="lt-display" data-rv="up">
+          <span className="mask-line">Let&apos;s build</span>
+          <span className="mask-line">
+            <em>something.</em>
+          </span>
         </h1>
-        <p className="body pg-lede" data-rv="up">
+        <p className="lt-lede" data-rv="up" style={{ marginTop: 28 }}>
           Tell us where you want to go. We&apos;ll bring the strategy, the
           design, and the build — one senior team, no hand-offs.
         </p>
-        <a className="cta" href="mailto:imzyrixx@gmail.com" data-cur data-magnetic="0.1" data-cuelume-hover="tick" data-cuelume-press>
-          <i aria-hidden="true" />
+        <a className="lt-cta" href="mailto:imzyrixx@gmail.com" data-cur data-magnetic="0.1" data-cuelume-hover="tick" data-cuelume-press style={{ marginTop: 36 }}>
           <Shape kind="star" size={13} />
           <span>imzyrixx@gmail.com</span>
           <svg viewBox="0 0 13 13" fill="none" aria-hidden="true">
@@ -53,13 +53,13 @@ export default function ContactPage() {
         </a>
       </section>
 
-      <section className="pg-contact-rs" data-rv="up">
-        <div className="pc-left">
-          <p className="pc-promise">
-            The number we agree on is the number you pay — fixed up front, no hours,
+      <section className="lt-section lt-split" data-rv="up">
+        <div>
+          <p className="lt-promise">
+            The number we agree on is <em>the number</em> you pay — fixed up front, no hours,
             no surprise phases.
           </p>
-          <div className="pc-ch">
+          <div className="lt-ch">
             <div>
               <h3>Studio</h3>
               <p>
@@ -95,16 +95,18 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        <div className="pc-right">
+        <div data-rv="up">
           <ContactForm />
         </div>
       </section>
 
-      <section className="pg-faq">
-        <p className="eyebrow">Before you write</p>
-        <div className="faq">
+      <section className="lt-section" data-rv="up">
+        <p className="lt-eyebrow" style={{ marginBottom: 24 }}>
+          Before you write
+        </p>
+        <div className="lt-faq">
           {faqs.map((f) => (
-            <details key={f.q} className="faq-item">
+            <details key={f.q} className="lt-faq-item">
               <summary data-cur>
                 <span>{f.q}</span>
                 <i aria-hidden="true" />

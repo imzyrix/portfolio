@@ -51,10 +51,9 @@ export default function ZyrixPage() {
         </p>
       </section>
 
-      <section className="zy-sec" id="z-line" data-cam>
+      <section className="zy-sec lt" id="z-line" data-cam>
         <div className="zy-sec-head">
-          <p className="eyebrow" data-rv="fade">
-            <Shape size={14} />
+          <p className="lt-eyebrow" data-rv="fade">
             The line — 01
           </p>
           <h2 className="zy-stmt">
@@ -85,17 +84,18 @@ export default function ZyrixPage() {
         </div>
       </section>
 
-      <section className="zy-sec" id="z-story" data-cam>
+      <section className="zy-sec lt" id="z-story" data-cam>
         <div className="zy-sec-head">
-          <p className="eyebrow" data-rv="fade">
-            <Shape size={14} />
+          <p className="lt-eyebrow" data-rv="fade">
             The story — 02
           </p>
         </div>
-        <FXSlider />
+        <div className="zy-story-band" data-rv="fade">
+          <FXSlider />
+        </div>
       </section>
 
-      <section className="zy-sec zy-center" id="z-mission" data-cam>
+      <section className="zy-sec lt zy-center" id="z-mission" data-cam>
         <h2 className="zy-stmt zy-stmt--giant">
           <TextReveal>
             Nothing handed off. <em>Everything in-house.</em>
@@ -106,7 +106,7 @@ export default function ZyrixPage() {
         </p>
       </section>
 
-      <section className="zy-sec zy-center" id="z-vision" data-cam>
+      <section className="zy-sec lt zy-center" id="z-vision" data-cam>
         <h2 className="zy-stmt zy-stmt--giant">
           <TextReveal>
             Architect worlds that <em>move hearts</em> and <em>spark hope.</em>
@@ -118,19 +118,16 @@ export default function ZyrixPage() {
         <DrawOnScroll paths={["M4 30 C 70 8, 140 6, 200 18 S 320 22, 420 10", "M10 38 C 90 22, 180 26, 250 34"]} viewBox="0 0 430 44" className="zy-draw" />
       </section>
 
-      <section className="zy-sec" id="z-service" data-cam>
-        <p className="eyebrow" data-rv="fade">
-          <Shape size={14} />
+      <section className="zy-sec lt" id="z-service" data-cam>
+        <p className="lt-eyebrow" data-rv="fade">
           Service — 03
         </p>
-        <div className="zy-svc">
+        <div className="zy-svc-lt">
           {services.map((s) => (
-            <div key={s.n} className="zy-svc-row" data-rv="up">
-              <span className="zy-svc-n">{s.n}</span>
-              <h3 className="zy-svc-t">
-                <span className="mask-line">{s.t}</span>
-              </h3>
-              <p className="zy-svc-d">{s.d}</p>
+            <div key={s.n} className="zy-svc-lt-row" data-rv="up">
+              <span className="zy-svc-lt-n">{s.n}</span>
+              <h3 className="zy-svc-lt-t">{s.t}</h3>
+              <p className="zy-svc-lt-d">{s.d}</p>
             </div>
           ))}
         </div>

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -35,28 +34,30 @@ export default async function ProjectPage({
   const next = projects[(idx + 1) % projects.length];
 
   return (
-    <main className="page-content">
-      <section className="pg-hero" data-rv="up">
-        <Link href="/work" className="backlink" data-cur data-cuelume-hover="tick">
+    <main className="page-content lt">
+      <section className="lt-hero" data-rv="up">
+        <Link href="/work" className="lt-back" data-cur data-cuelume-hover="tick">
           <svg viewBox="0 0 13 13" fill="none" aria-hidden="true">
-            <path d="M12 1L1 12M1 3v9h9" stroke="#a9b2aa" strokeWidth="1.3" />
+            <path d="M12 1L1 12M1 3v9h9" stroke="currentColor" strokeWidth="1.3" />
           </svg>
           All work
         </Link>
-        <p className="eyebrow" data-rv="fade">
-          <span className="dot" aria-hidden="true" />
+        <p className="lt-eyebrow" data-rv="fade" style={{ marginTop: 48 }}>
           {p.num} — {p.tag} · {p.year}
         </p>
-        <h1 className="display">
-          <span className="mask-line"><span>{p.title}<em>.</em></span></span>
+        <h1 className="lt-display" data-rv="up">
+          <span className="mask-line">
+            {p.title}
+            <em>.</em>
+          </span>
         </h1>
-        <p className="body pg-lede" data-rv="up">
+        <p className="lt-lede" data-rv="up" style={{ marginTop: 28 }}>
           {p.intro}
         </p>
       </section>
 
-      <section className="pg-fig" data-rv="up">
-        <div className="fig-frame">
+      <section className="lt-fig" data-rv="up">
+        <div className="lt-fig-frame">
           <Image
             src={p.plate}
             alt={`${p.title} — ${p.tag} case study cover`}
@@ -64,40 +65,22 @@ export default async function ProjectPage({
             height={1402}
             sizes="(max-width: 900px) 92vw, 820px"
           />
-          <span
-            className="glow"
-            aria-hidden="true"
-            style={
-              {
-                "--gx": p.glow.gx,
-                "--gy": p.glow.gy,
-                "--gr": p.glow.gr,
-                "--gc1": p.glow.gc1,
-                "--gc2": p.glow.gc2,
-                "--gt": p.glow.gt,
-                "--gt2": p.glow.gt2,
-              } as CSSProperties
-            }
-          />
-          <span className="card-num" aria-hidden="true">
-            {p.num}
-          </span>
         </div>
-        <div className="fig-meta">
+        <div className="lt-fig-meta">
           <span>{p.role}</span>
           <span>{p.year}</span>
         </div>
       </section>
 
-      <section className="pg-story">
+      <section className="lt-story" data-rv="up">
         {p.story.map((para, i) => (
-          <p key={i} className="body-lg" data-rv="up">
+          <p key={i} className="lt-body">
             {para}
           </p>
         ))}
       </section>
 
-      <section className="story-stats" data-rv="up">
+      <section className="lt-stats" data-rv="up" style={{ margin: "0 var(--pad)" }}>
         {p.stats.map((s) => (
           <div key={s.span}>
             <b>{s.b}</b>
@@ -106,15 +89,18 @@ export default async function ProjectPage({
         ))}
       </section>
 
-      <section className="pg-next" data-rv="up">
-        <p className="eyebrow">Next case study</p>
-        <Link href={`/work/${next.slug}`} className="next-link" data-cur>
-          <span className="display">{next.title}</span>
-          <svg viewBox="0 0 26 26" fill="none" aria-hidden="true">
+      <Link href={`/work/${next.slug}`} className="lt-next" data-cur data-cuelume-hover="tick" data-rv="up">
+        <p className="lt-eyebrow">Next case study</p>
+        <h2 className="lt-h2">
+          {next.title}
+          <em>.</em>
+        </h2>
+        <span className="lt-next-go" aria-hidden="true">
+          <svg viewBox="0 0 26 26" fill="none">
             <path d="M8 6h12v12M20 6L6 20" stroke="currentColor" strokeWidth="1.4" />
           </svg>
-        </Link>
-      </section>
+        </span>
+      </Link>
     </main>
   );
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Shape from "@/components/Shape";
 import DrawOnScroll from "@/components/DrawOnScroll";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Studio — Zyrix Dev",
@@ -40,32 +40,33 @@ const stats = [
 
 export default function StudioPage() {
   return (
-    <main className="page-content">
-      <section className="pg-hero" data-rv="up">
-        <p className="eyebrow" data-rv="fade">
-          <Shape size={15} className="shp--spin" />
+    <main className="page-content lt">
+      <section className="lt-hero" data-rv="up">
+        <p className="lt-eyebrow" data-rv="fade">
           Who we are
         </p>
-        <h1 className="display">
-          <span className="mask-line"><span>One studio,</span></span>
-          <span className="mask-line"><span>every frame earns</span></span>
-          <span className="mask-line"><span><em>its place.</em></span></span>
+        <h1 className="lt-display" data-rv="up">
+          <span className="mask-line">One studio,</span>
+          <span className="mask-line">every frame earns</span>
+          <span className="mask-line">
+            <em>its place.</em>
+          </span>
         </h1>
-        <p className="body pg-lede" data-rv="up">
+        <p className="lt-lede" data-rv="up" style={{ marginTop: 28 }}>
           Zyrix Dev is a small creative studio building digital products and
           brands in the dark — where the only light is the work itself.
         </p>
       </section>
 
-      <section className="pg-story">
-        <p className="body-lg" data-rv="up">
+      <section className="lt-story" data-rv="up">
+        <p className="lt-body">
           We started with a rule: no hand-offs. Too many projects die in the
           gap between the people who promise and the people who build. So we
           built a studio where the strategist can open the codebase, the
           designer ships the motion, and the engineer argues about the kerning
           — because someone has to.
         </p>
-        <p className="body-lg" data-rv="up">
+        <p className="lt-body">
           The result is a small, senior team that stays in the room until the
           thing ships — and keeps working after it does. The site you are
           standing in is our own canvas: the city in the dark behind this text
@@ -74,14 +75,16 @@ export default function StudioPage() {
         </p>
       </section>
 
-      <section className="pg-canvas" data-rv="fade">
-        <p className="eyebrow">The canvas</p>
-        <h2 className="display h-canvas">
-          <span className="mask-line"><span>Rendered live,</span></span>
-          <span className="mask-line"><span>on your device,</span></span>
-          <span className="mask-line"><span>at <em>60 frames</em> a second.</span></span>
+      <section className="lt-band lt-canvas" data-rv="fade">
+        <p className="lt-eyebrow">The canvas</p>
+        <h2 className="lt-display">
+          <span className="mask-line">Rendered live,</span>
+          <span className="mask-line">on your device,</span>
+          <span className="mask-line">
+            at <em>60 frames</em> a second.
+          </span>
         </h2>
-        <p className="pg-canvas-note" data-rv="fade">
+        <p className="lt-canvas-note" data-rv="fade">
           — the site you are standing in is our own canvas.
         </p>
         <DrawOnScroll
@@ -91,7 +94,7 @@ export default function StudioPage() {
         />
       </section>
 
-      <section className="story-stats st-stats" data-rv="up">
+      <section className="lt-stats lt-stats--4" data-rv="up" style={{ margin: "0 var(--pad)" }}>
         {stats.map((s) => (
           <div key={s.span}>
             <b>{s.b}</b>
@@ -100,28 +103,27 @@ export default function StudioPage() {
         ))}
       </section>
 
-      <section className="pg-list pg-list-rs">
-        {principles.map((pr) => (
-          <div key={pr.k} className="les" data-rv="up">
-            <span className="les-ghost" aria-hidden="true">
-              {pr.k}
-            </span>
-            <span className="k">{pr.k}</span>
-            <h3>{pr.title}</h3>
-            <p>{pr.desc}</p>
-            <span className="bar" aria-hidden="true" />
-          </div>
-        ))}
+      <section className="lt-section" data-rv="up">
+        <p className="lt-eyebrow">How we work</p>
+        <div className="lt-principles" style={{ marginTop: 24 }}>
+          {principles.map((pr) => (
+            <div key={pr.k} className="lt-principle" data-rv="up">
+              <span className="lt-ghost" aria-hidden="true">
+                {pr.k}
+              </span>
+              <h3>{pr.title}</h3>
+              <p>{pr.desc}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
-      <section className="pg-cta" data-rv="up">
-        <p className="eyebrow">Work with us</p>
-        <h2 className="display h-sec">
-          <span className="mask-line">Small team,</span>
-          <span className="mask-line">senior output.</span>
+      <section className="lt-section" data-rv="up">
+        <p className="lt-eyebrow">Work with us</p>
+        <h2 className="lt-h2" style={{ margin: "22px 0 34px" }}>
+          Small team, <em>senior output.</em>
         </h2>
-        <Link href="/contact" className="cta" data-cur data-magnetic="0.1" data-cuelume-hover="tick" data-cuelume-press>
-          <i aria-hidden="true" />
+        <Link href="/contact" className="lt-cta" data-cur data-magnetic="0.1" data-cuelume-hover="tick" data-cuelume-press>
           <Shape kind="star" size={13} />
           <span>Start a project</span>
           <svg viewBox="0 0 13 13" fill="none" aria-hidden="true">
