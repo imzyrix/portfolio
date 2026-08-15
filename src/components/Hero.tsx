@@ -26,6 +26,8 @@ export default function Hero() {
         </p>
       </div>
 
+      <Shape size={128} color="rgba(230,233,226,0.08)" className="spk spk-hero spk--turn" />
+
       <Link className="peek" href="#work" data-cur>
         <span className="peek-fr" />
         <span className="peek-play" aria-hidden="true">

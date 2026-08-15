@@ -55,4 +55,5 @@ export const socials = [
   { label: "Discord", value: "imzyrixx", href: "https://discord.com/users/imzyrixx" },
   { label: "Instagram", value: "@imzyrix", href: "https://instagram.com/imzyrix" },
   { label: "GitHub", value: "imzyrix", href: "https://github.com/imzyrix" },
+  { label: "YouTube", value: "@imzyrix", href: "https://youtube.com/@imzyrix" },
 ];

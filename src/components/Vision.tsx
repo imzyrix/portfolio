@@ -3,6 +3,7 @@ import Shape from "@/components/Shape";
 export default function Vision() {
   return (
     <section id="vision" className="sec vis" data-cam>
+      <Shape size={96} color="rgba(215,255,63,0.14)" className="spk spk-vis spk--turn" />
       <div className="sec-head">
         <p className="k">
           <Shape size={14} />

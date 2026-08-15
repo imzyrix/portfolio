@@ -6770,3 +6770,32 @@ h3 {
   -webkit-text-stroke: 1px rgba(230, 233, 226, 0.16);
   user-select: none;
 }
+
+/* big decorative sparkles */
+.spk {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  flex: none;
+}
+.spk--float { animation: peek-float 7s ease-in-out infinite; }
+.spk--turn { animation: spk-turn 46s linear infinite; }
+@keyframes spk-turn {
+  to { transform: rotate(360deg); }
+}
+.spk-hero { right: 9%; top: 20%; }
+.spk-svc { left: -4%; top: 46%; }
+.spk-vis { right: 5%; bottom: 20%; }
+.foot-wordmark .spk-foot {
+  position: static;
+  display: block;
+  margin: 0 auto 22px;
+  animation-duration: 6s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .spk--float, .spk--turn { animation: none; }
+}
+@media (max-width: 767px) {
+  .spk-hero { right: -14px; top: 8%; opacity: 0.7; }
+  .spk-svc, .spk-vis { display: none; }
+}

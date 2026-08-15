@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Shape from "@/components/Shape";
 import { socials } from "@/data/site";
 
 const socialLinks = socials.filter((s) => s.label !== "Email");
@@ -74,6 +75,7 @@ export default function Footer() {
       </div>
 
       <div className="foot-wordmark" aria-hidden="true">
+        <Shape size={150} color="rgba(215,255,63,0.4)" className="spk spk-foot spk--float" />
         ZYRIX
       </div>
 

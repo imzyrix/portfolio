@@ -5,6 +5,7 @@ import { services } from "@/data/site";
 export default function Services() {
   return (
     <section id="services" className="sec" data-cam>
+      <Shape size={76} color="rgba(230,233,226,0.07)" className="spk spk-svc spk--float" />
       <div className="sec-head">
         <p className="k">
           <Shape size={14} />
