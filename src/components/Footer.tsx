@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Shape from "@/components/Shape";
 import { socials } from "@/data/site";
 
 const socialLinks = socials.filter((s) => s.label !== "Email");
@@ -26,15 +25,6 @@ export default function Footer() {
       </div>
 
       <div className="foot-grid">
-        <div className="foot-brand">
-          <span className="brand-mark" aria-hidden="true">
-            Z
-          </span>
-          <Shape kind="star" size={14} className="shp--float" />
-          <p>
-            Work that speaks last — crafted in the dark, built to be seen.
-          </p>
-        </div>
         <div>
           <h4>Chapters</h4>
           <ul>
@@ -81,6 +71,10 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+      </div>
+
+      <div className="foot-wordmark" aria-hidden="true">
+        ZYRIX
       </div>
 
       <div className="foot-base">

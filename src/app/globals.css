@@ -6750,3 +6750,23 @@ h3 {
     animation: none;
   }
 }
+
+/* footer: 3 columns after brand card removed */
+.foot-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* footer giant wordmark */
+.foot-wordmark {
+  margin-top: clamp(48px, 8vh, 96px);
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: clamp(64px, 14vw, 260px);
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(230, 233, 226, 0.16);
+  user-select: none;
+}
