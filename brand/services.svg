@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 420" width="1160" height="420" role="img" aria-label="Zyrix Dev services: Discord Bots, 3D Animated Websites, AI Tools, SaaS Products, AI Automations, Brand and Business Systems">
+  <rect x="0" y="0" width="1160" height="420" rx="24" fill="#080b10" stroke="#1c2128" stroke-width="2"/>
+  <g font-family="'Space Grotesk', Inter, system-ui, sans-serif">
+    <!-- row 1 -->
+    <g>
+      <rect x="24" y="24" width="364" height="176" rx="16" fill="#0a0d12" stroke="#161b22" stroke-width="2"/>
+      <text x="44" y="58" font-size="13" font-weight="700" letter-spacing="3" fill="#d7ff3f">01</text>
+      <text x="44" y="96" font-size="19" font-weight="700" fill="#e6e9e2">Discord Bots</text>
+      <text x="44" y="120" font-size="12" font-weight="400" fill="#8a948d">Moderation · economy · music · leveling · AI agents</text>
+      <text x="44" y="174" font-size="11" letter-spacing="2" fill="#4a514b">COMMUNITY TOOLS THAT LIVE IN YOUR SERVER</text>
+    </g>
+    <g>
+      <rect x="398" y="24" width="364" height="176" rx="16" fill="#0a0d12" stroke="#161b22" stroke-width="2"/>
+      <text x="418" y="58" font-size="13" font-weight="700" letter-spacing="3" fill="#d7ff3f">02</text>
+      <text x="418" y="96" font-size="19" font-weight="700" fill="#e6e9e2">3D Animated Websites</text>
+      <text x="418" y="120" font-size="12" font-weight="400" fill="#8a948d">WebGL · scroll storytelling · shaders · 60fps</text>
+      <text x="418" y="174" font-size="11" letter-spacing="2" fill="#4a514b">CINEMATIC EXPERIENCES, PERFORMANCE-BUDGETED</text>
+    </g>
+    <g>
+      <rect x="772" y="24" width="364" height="176" rx="16" fill="#0a0d12" stroke="#161b22" stroke-width="2"/>
+      <text x="792" y="58" font-size="13" font-weight="700" letter-spacing="3" fill="#d7ff3f">03</text>
+      <text x="792" y="96" font-size="19" font-weight="700" fill="#e6e9e2">AI Tools</text>
+      <text x="792" y="120" font-size="12" font-weight="400" fill="#8a948d">LLM products · agents · chatbots · RAG</text>
+      <text x="792" y="174" font-size="11" letter-spacing="2" fill="#4a514b">INTELLIGENCE PUT TO WORK FOR CUSTOMERS</text>
+    </g>
+    <!-- row 2 -->
+    <g>
+      <rect x="24" y="220" width="364" height="176" rx="16" fill="#0a0d12" stroke="#161b22" stroke-width="2"/>
+      <text x="44" y="254" font-size="13" font-weight="700" letter-spacing="3" fill="#d7ff3f">04</text>
+      <text x="44" y="292" font-size="19" font-weight="700" fill="#e6e9e2">SaaS Products</text>
+      <text x="44" y="316" font-size="12" font-weight="400" fill="#8a948d">Full-stack · auth · billing · growth loops</text>
+      <text x="44" y="370" font-size="11" letter-spacing="2" fill="#4a514b">BUILT, SHIPPED AND GROWN FOR BRANDS</text>
+    </g>
+    <g>
+      <rect x="398" y="220" width="364" height="176" rx="16" fill="#0a0d12" stroke="#161b22" stroke-width="2"/>
+      <text x="418" y="254" font-size="13" font-weight="700" letter-spacing="3" fill="#d7ff3f">05</text>
+      <text x="418" y="292" font-size="19" font-weight="700" fill="#e6e9e2">AI Automations</text>
+      <text x="418" y="316" font-size="12" font-weight="400" fill="#8a948d">Workflows · agents · pipelines · ops dashboards</text>
+      <text x="418" y="370" font-size="11" letter-spacing="2" fill="#4a514b">WORKFLOWS THAT RUN THE BUSYWORK FOR YOU</text>
+    </g>
+    <g>
+      <rect x="772" y="220" width="364" height="176" rx="16" fill="#0a0d12" stroke="#d7ff3f" stroke-width="2"/>
+      <text x="792" y="254" font-size="13" font-weight="700" letter-spacing="3" fill="#d7ff3f">06</text>
+      <text x="792" y="292" font-size="19" font-weight="700" fill="#d7ff3f">Brand &amp; Business Systems</text>
+      <text x="792" y="316" font-size="12" font-weight="400" fill="#8a948d">Identity · design tokens · strategy · launch</text>
+      <text x="792" y="370" font-size="11" letter-spacing="2" fill="#4a514b">★ THE GLUE THAT HOLDS EVERYTHING TOGETHER</text>
+    </g>
+  </g>
+</svg>

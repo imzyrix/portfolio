@@ -16,6 +16,15 @@ Discord bots · 3D animated websites · AI tools · SaaS · Automations · Brand
 
 <img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
+<div align="center">
+
+![Status](https://img.shields.io/badge/status-live-d7ff3f?style=for-the-badge&labelColor=080b10&color=14181f)
+![Build](https://img.shields.io/badge/build-passing-d7ff3f?style=for-the-badge&labelColor=080b10&color=14181f)
+![Stack](https://img.shields.io/badge/stack-Next.js%20%7C%20TypeScript%20%7C%20Three.js-d7ff3f?style=for-the-badge&labelColor=080b10&color=14181f)
+![License](https://img.shields.io/badge/license-MIT-d7ff3f?style=for-the-badge&labelColor=080b10&color=14181f)
+
+</div>
+
 <img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## Table of contents
@@ -114,6 +123,8 @@ signage, and lab notebooks — re-marking the campus within a quarter.
 <img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 🛠 What we build
+
+<img src="./brand/services.svg" alt="Zyrix Dev services" width="100%" />
 
 | Service | What you get |
 | --- | --- |

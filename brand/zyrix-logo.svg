@@ -1,15 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="720" height="220" role="img" aria-label="Zyrix Dev logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" width="720" height="240" role="img" aria-label="Zyrix Dev logo">
   <defs>
     <linearGradient id="zd-grad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#d7ff3f"/>
       <stop offset="1" stop-color="#7d8a1f"/>
     </linearGradient>
+    <filter id="zd-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="zd-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
   </defs>
-  <rect x="8" y="8" width="704" height="204" rx="28" fill="#0a0d12" stroke="#1c2128" stroke-width="2"/>
-  <g transform="translate(48 78)">
-    <path d="M 36 0 L 55.6 16.6 L 80 21 L 55.6 25.4 L 36 42 L 30 22 L 10 17.4 L 30 13 L 20 0 Z" fill="url(#zd-grad)"/>
-    <text x="104" y="42" font-family="'Space Grotesk', Inter, system-ui, sans-serif" font-size="44" font-weight="700" letter-spacing="6" fill="#e6e9e2">ZYRIX<span fill="#d7ff3f"> DEV</span></text>
+  <rect x="0" y="0" width="720" height="240" rx="32" fill="#080b10" stroke="#1c2128" stroke-width="2" filter="url(#zd-shadow)"/>
+  <line x1="32" y1="52" x2="688" y2="52" stroke="#1c2128" stroke-width="1"/>
+  <g transform="translate(44 70)">
+    <path d="M 40 0 L 61.9 18.5 L 89 23.4 L 61.9 28.3 L 40 46.8 L 33.4 24.5 L 11 19.6 L 33.4 14.7 L 23 0 Z" fill="url(#zd-grad)" filter="url(#zd-glow)"/>
+    <text x="116" y="40" font-family="'Space Grotesk', Inter, system-ui, sans-serif" font-size="46" font-weight="700" letter-spacing="4" fill="#e6e9e2">ZYRIX<span fill="#d7ff3f" font-weight="400" font-size="30" letter-spacing="0"> </span><tspan fill="#d7ff3f">DEV</tspan></text>
+    <text x="117" y="70" font-family="Inter, system-ui, sans-serif" font-size="14" letter-spacing="6" fill="#8a948d">DIGITAL CRAFT STUDIO</text>
   </g>
-  <text x="48" y="168" font-family="Inter, system-ui, sans-serif" font-size="15" letter-spacing="5" fill="#8a948d">DIGITAL CRAFT STUDIO — DARK FIRST</text>
-  <text x="672" y="166" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="13" letter-spacing="3" fill="#4a514b">EST. 2026</text>
+  <line x1="32" y1="198" x2="688" y2="198" stroke="#1c2128" stroke-width="1"/>
+  <text x="44" y="220" font-family="Inter, system-ui, sans-serif" font-size="12" letter-spacing="3" fill="#4a514b">WORK THAT SPEAKS LAST</text>
+  <text x="676" y="220" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="12" letter-spacing="3" fill="#4a514b">CRAFTED IN THE DARK — BUILT TO BE SEEN</text>
 </svg>
