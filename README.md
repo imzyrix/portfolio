@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+<img src="./zyrix-banner.png" alt="Zyrix Dev — digital craft studio" width="100%" />
 
-First, run the development server:
+# ⚡ ZYRIX DEV
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Digital craft studio — work that speaks last, crafted in the dark, built to be seen.**
+
+Discord bots · 3D animated websites · AI tools · SaaS · Automations · Brand systems
+
+<img src="./zyrix-logo.png" alt="Zyrix logo" width="96" />
+
+</div>
+
+---
+
+## Who we are
+
+**Zyrix** is a one-man digital studio for brands and communities that refuse to blend in.
+We ship products and experiences that *work* first — then make them impossible to ignore.
+
+Every build is crafted in the dark, built to be seen: cinematic motion, sharp engineering,
+and design that holds up at 60fps.
+
+## What we build
+
+| Service | What you get |
+| --- | --- |
+| 🤖 **Discord Bots** | Moderation, economy, music, leveling & AI agents that live in your server |
+| 🌌 **3D Animated Websites** | WebGL scenes, scroll-driven storytelling, custom shaders & post-processing |
+| 🧠 **AI Tools** | LLM integrations, agents, chatbots & copilots with RAG pipelines |
+| 📦 **SaaS Products** | Full-stack platforms: strategy, builds, auth, billing & growth loops |
+| ⚙️ **AI Automations** | Workflows, agents & pipelines that run the busywork for you |
+| 🏷️ **Brand & Business Systems** | Identity, design tokens, strategy & launch systems |
+
+## Tech we craft with
+
+`Next.js` · `TypeScript` · `Three.js` · `React Three Fiber` · `GSAP` · `WebGL` · `Tailwind` · `Node.js` · `Python` · `OpenAI` & `LLM APIs`
+
+## The site
+
+This repository is the home page of Zyrix Dev — a single-page, fully static experience:
+
+```
+zyrix-logo.png      Brand logo
+zyrix-banner.png    Repository banner
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Get in touch
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Email** — [imzyrixx@gmail.com](mailto:imzyrixx@gmail.com)
+- **Discord** — `imzyrixx`
+- **Instagram** — [@imzyrix](https://instagram.com/imzyrix)
+- **GitHub** — [imzyrix](https://github.com/imzyrix)
+- **YouTube** — [@imzyrix](https://youtube.com/@imzyrix)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<div align="center">
 
-## Learn More
+*Digital after dark — © 2026 Zyrix Dev. All rights reserved.*
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</div>
