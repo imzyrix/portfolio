@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 24" width="480" height="24" role="presentation" aria-hidden="true">
+  <line x1="0" y1="12" x2="216" y2="12" stroke="#1c2128" stroke-width="1"/>
+  <g transform="translate(230 0)">
+    <path d="M 12 0 L 18.6 6.9 L 27 8.4 L 18.6 9.9 L 12 16.8 L 10.2 9 Z" fill="#d7ff3f" opacity="0.9"/>
+  </g>
+  <line x1="264" y1="12" x2="480" y2="12" stroke="#1c2128" stroke-width="1"/>
+</svg>

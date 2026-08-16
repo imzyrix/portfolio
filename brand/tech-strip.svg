@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 64" width="1160" height="64" role="img" aria-label="Tech stack: Next.js, TypeScript, React, Three.js, React Three Fiber, GSAP, WebGL, Tailwind, Node.js, Python, LLMs, PostgreSQL, Redis">
+  <rect x="0" y="0" width="1160" height="64" rx="18" fill="#0a0d12" stroke="#1c2128" stroke-width="2"/>
+  <g font-family="'Space Grotesk', Inter, system-ui, sans-serif" font-size="15" font-weight="500" fill="#e6e9e2">
+    <rect x="18" y="14" width="118" height="36" rx="18" fill="#d7ff3f"/>
+    <text x="77" y="37" text-anchor="middle" fill="#05070a">Next.js</text>
+    <g fill="#14181f">
+      <rect x="148" y="14" width="140" height="36" rx="18" fill="#14181f" stroke="#1c2128" stroke-width="2"/>
+      <text x="218" y="37" text-anchor="middle">TypeScript</text>
+      <rect x="300" y="14" width="104" height="36" rx="18" fill="#14181f" stroke="#1c2128" stroke-width="2"/>
+      <text x="352" y="37" text-anchor="middle">React</text>
+      <rect x="416" y="14" width="118" height="36" rx="18" fill="#14181f" stroke="#1c2128" stroke-width="2"/>
+      <text x="475" y="37" text-anchor="middle">Three.js</text>
+      <rect x="546" y="14" width="186" height="36" rx="18" fill="#14181f" stroke="#1c2128" stroke-width="2"/>
+      <text x="639" y="37" text-anchor="middle">React Three Fiber</text>
+      <rect x="744" y="14" width="86" height="36" rx="18" fill="#14181f" stroke="#1c2128" stroke-width="2"/>
+      <text x="787" y="37" text-anchor="middle">GSAP</text>
+      <rect x="842" y="14" width="92" height="36" rx="18" fill="#14181f" stroke="#1c2128" stroke-width="2"/>
+      <text x="888" y="37" text-anchor="middle">WebGL</text>
+      <rect x="946" y="14" width="196" height="36" rx="18" fill="#14181f" stroke="#1c2128" stroke-width="2"/>
+      <text x="1044" y="37" text-anchor="middle">Node.js · Python · LLMs</text>
+    </g>
+  </g>
+</svg>

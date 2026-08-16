@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="720" height="220" role="img" aria-label="Zyrix Dev logo">
+  <defs>
+    <linearGradient id="zd-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d7ff3f"/>
+      <stop offset="1" stop-color="#7d8a1f"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="704" height="204" rx="28" fill="#0a0d12" stroke="#1c2128" stroke-width="2"/>
+  <g transform="translate(48 78)">
+    <path d="M 36 0 L 55.6 16.6 L 80 21 L 55.6 25.4 L 36 42 L 30 22 L 10 17.4 L 30 13 L 20 0 Z" fill="url(#zd-grad)"/>
+    <text x="104" y="42" font-family="'Space Grotesk', Inter, system-ui, sans-serif" font-size="44" font-weight="700" letter-spacing="6" fill="#e6e9e2">ZYRIX<span fill="#d7ff3f"> DEV</span></text>
+  </g>
+  <text x="48" y="168" font-family="Inter, system-ui, sans-serif" font-size="15" letter-spacing="5" fill="#8a948d">DIGITAL CRAFT STUDIO — DARK FIRST</text>
+  <text x="672" y="166" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="13" letter-spacing="3" fill="#4a514b">EST. 2026</text>
+</svg>

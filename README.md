@@ -2,6 +2,10 @@
 
 <img src="./zyrix-banner.png" alt="Zyrix Dev — digital craft studio" width="100%" />
 
+<br/>
+
+<img src="./brand/zyrix-logo.svg" alt="Zyrix Dev logo" width="560" />
+
 # ⚡ ZYRIX DEV
 
 **Digital craft studio — work that speaks last, crafted in the dark, built to be seen.**
@@ -10,7 +14,9 @@ Discord bots · 3D animated websites · AI tools · SaaS · Automations · Brand
 
 </div>
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
+
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## Table of contents
 
@@ -28,7 +34,7 @@ Discord bots · 3D animated websites · AI tools · SaaS · Automations · Brand
 - [Get in touch](#-get-in-touch)
 - [License](#-license)
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## ✨ Who we are
 
@@ -46,7 +52,7 @@ The studio runs on one principle: *the work speaks last.* No noise, no filler �
 carries the conversation. That's why Zyrix ships bots, platforms, and websites that look like
 they cost ten times more than they did.
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 🧭 The philosophy
 
@@ -56,7 +62,7 @@ they cost ten times more than they did.
 4. **Performance is a feature.** Shaders, not image soup. 60fps or it goes back to the drawing board.
 5. **Lasting systems.** Identity and code built to survive years — not launch-week hype.
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 🚀 Featured work
 
@@ -105,7 +111,7 @@ signage, and lab notebooks — re-marking the campus within a quarter.
 | ⏳ | Built to last 40 years |
 | 🧩 | 12 touchpoints shipped |
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 🛠 What we build
 
@@ -118,7 +124,7 @@ signage, and lab notebooks — re-marking the campus within a quarter.
 | ⚙️ **AI Automations** | Workflows, agents & pipelines that run the busywork for you |
 | 🏷️ **Brand & Business Systems** | Identity, design tokens, strategy & launch systems |
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 📊 By the numbers
 
@@ -129,13 +135,13 @@ signage, and lab notebooks — re-marking the campus within a quarter.
 | 🧠 AI agents deployed | 40+ |
 | ⭐ Average client rating | 4.9 / 5 |
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 💻 Tech we craft with
 
-`Next.js` · `TypeScript` · `React` · `Three.js` · `React Three Fiber` · `GSAP` · `WebGL` · `Tailwind` · `Node.js` · `Python` · `OpenAI` & `LLM APIs` · `PostgreSQL` · `Redis`
+<img src="./brand/tech-strip.svg" alt="Tech stack" width="100%" />
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 🎨 Design system
 
@@ -154,7 +160,7 @@ Micro-interactions include a session-seconds counter (*"NNNN in the dark"*), a l
 with a lime-bar intro, a scroll cue, a custom cursor, and a giant outline **ZYRIX** wordmark in
 the footer.
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 🌐 The site
 
@@ -165,7 +171,7 @@ zyrix-banner.png    Repository banner
 zyrix-logo.png      Brand logo
 ```
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 📁 Project structure
 
@@ -197,7 +203,7 @@ public/assets/
 └── generated/              Generated artwork
 ```
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 🏃 Run it locally
 
@@ -210,7 +216,7 @@ npm start          # serve production build
 
 Requires **Node 18.17+** and npm.
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 🚢 Deployment
 
@@ -220,7 +226,7 @@ The site is fully static and deployable anywhere:
 - **Cloudflare Pages** — set `output: "export"` in `next.config.ts`, then `wrangler pages deploy out`
 - **Any static host** — copy the `out/` directory after `next build`
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 📬 Get in touch
 
@@ -232,7 +238,7 @@ The site is fully static and deployable anywhere:
 
 Open for new projects — *available worldwide, remote-first.*
 
----
+<img src="./brand/divider.svg" alt="" width="100%" align="center" />
 
 ## 📄 License
 
