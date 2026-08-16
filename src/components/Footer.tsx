@@ -7,24 +7,6 @@ const socialLinks = socials.filter((s) => s.label !== "Email");
 export default function Footer() {
   return (
     <footer className="foot" data-cam>
-      <div className="mq polaroid-mq" aria-hidden="true">
-        <div className="mq-track polaroid-track">
-          {[0, 1].map((dup) =>
-            [
-              { t: "Orbit — 2026", img: "/assets/image/zyrix-work-1.webp", r: "-4deg" },
-              { t: "Lumen — 2026", img: "/assets/image/zyrix-work-2.webp", r: "3deg" },
-              { t: "Aster — 2025", img: "/assets/image/zyrix-work-3.webp", r: "-2deg" },
-              { t: "Zyrix Dev", img: "/assets/image/zyrix-peek.webp", r: "4deg" },
-            ].map((p, j) => (
-              <figure key={`${dup}-${j}`} className="polaroid" style={{ rotate: p.r }}>
-                <img src={p.img} alt="" loading="lazy" />
-                <figcaption>{p.t}</figcaption>
-              </figure>
-            ))
-          )}
-        </div>
-      </div>
-
       <div className="foot-grid">
         <div>
           <h4>Chapters</h4>
