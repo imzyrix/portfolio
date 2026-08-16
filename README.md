@@ -245,7 +245,7 @@ The site is fully static and deployable anywhere:
 - **Discord** — `imzyrixx`
 - **Instagram** — [@imzyrix](https://instagram.com/imzyrix)
 - **GitHub** — [imzyrix](https://github.com/imzyrix)
-- **YouTube** — [@imzyrix](https://youtube.com/@imzyrix)
+- **YouTube** — [@zyrix-dev](https://youtube.com/@zyrix-dev)
 
 Open for new projects — *available worldwide, remote-first.*
 
