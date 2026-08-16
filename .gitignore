@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# project tooling / docs (not part of the site)
+.opencode/
+docs/
+screenshots/
+*.log
