@@ -20,8 +20,9 @@ Discord bots · 3D animated websites · AI tools · SaaS · Automations · Brand
 <div align="center">
 
 ![Status](https://img.shields.io/badge/status-live-d7ff3f?style=for-the-badge&labelColor=080b10&color=14181f)
+![Domain](https://img.shields.io/badge/domain-zyrix.qzz.io-d7ff3f?style=for-the-badge&labelColor=080b10&color=14181f)
+![Hosting](https://img.shields.io/badge/hosting-Cloudflare%20Pages-d7ff3f?style=for-the-badge&labelColor=080b10&color=14181f)
 ![Build](https://img.shields.io/badge/build-passing-d7ff3f?style=for-the-badge&labelColor=080b10&color=14181f)
-![Stack](https://img.shields.io/badge/stack-Next.js%20%7C%20TypeScript%20%7C%20Three.js-d7ff3f?style=for-the-badge&labelColor=080b10&color=14181f)
 ![License](https://img.shields.io/badge/license-MIT-d7ff3f?style=for-the-badge&labelColor=080b10&color=14181f)
 
 </div>
@@ -56,6 +57,9 @@ Discord bots · 3D animated websites · AI tools · SaaS · Automations · Brand
 
 **Zyrix** is a one-man digital studio for brands and communities that refuse to blend in.
 We ship products and experiences that *work* first — then make them impossible to ignore.
+
+> 🌐 **Live now:** the studio's home page is online at **[zyrix.qzz.io](https://zyrix.qzz.io)** —
+> a dark-first single-page experience built with Next.js and served from Cloudflare Pages.
 
 Everything that leaves the studio is:
 
@@ -237,7 +241,8 @@ the footer.
 
 ## 🌐 The site
 
-This repository is the home page of Zyrix Dev — a single-page, fully static experience:
+This repository is the home page of Zyrix Dev — a single-page, fully static experience,
+**live at [zyrix.qzz.io](https://zyrix.qzz.io)** on Cloudflare Pages (auto-deployed from this repo).
 
 - **Dark-first design** with a lime spotlight accent
 - **Cinematic loading screen** with a lime-bar intro
@@ -310,13 +315,19 @@ Requires **Node 18.17+** and npm.
 
 ## 🚢 Deployment
 
-The site is fully static and deployable anywhere:
+The site is **live on Cloudflare Pages** at **[zyrix.qzz.io](https://zyrix.qzz.io)** — connected to this
+GitHub repo, so every push auto-deploys. The build is a fully static export:
+
+- **Build command:** `npm run build` (`output: "export"` in `next.config.ts`)
+- **Build output directory:** `out`
+- **Host:** Cloudflare Pages · **Domain:** `zyrix.qzz.io`
+
+The same static output can go anywhere:
 
 - **Vercel** — `npx vercel --prod` (zero config)
-- **Cloudflare Pages** — set `output: "export"` in `next.config.ts`, then `wrangler pages deploy out`
 - **Any static host** — copy the `out/` directory after `next build`
 
-### Vercel + custom domain (the recommended path)
+### Vercel + custom domain (alternative path)
 
 ```bash
 npx vercel login        # authenticate once
