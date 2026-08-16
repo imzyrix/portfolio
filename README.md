@@ -8,7 +8,7 @@
 
 Discord bots · 3D animated websites · AI tools · SaaS · Automations · Brand systems
 
-<img src="./src/app/favicon.ico" alt="Zyrix logo" width="48" />
+<img src="./zyrix-logo.png" alt="Zyrix logo" width="96" />
 
 </div>
 
@@ -42,6 +42,7 @@ and design that holds up at 60fps.
 This repository is the home page of Zyrix Dev — a single-page, fully static experience:
 
 ```
+zyrix-logo.png      Brand logo
 zyrix-banner.png    Repository banner
 ```
 
