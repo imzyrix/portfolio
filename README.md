@@ -1,14 +1,12 @@
 <div align="center">
 
-<img src="./zyrix-banner.png" alt="Zyrix Dev — digital craft studio" width="100%" />
+<img src="./zyrix-logo.png" alt="Zyrix Dev — digital craft studio" width="100%" />
 
 # ⚡ ZYRIX DEV
 
 **Digital craft studio — work that speaks last, crafted in the dark, built to be seen.**
 
 Discord bots · 3D animated websites · AI tools · SaaS · Automations · Brand systems
-
-<img src="./zyrix-logo.png" alt="Zyrix logo" width="96" />
 
 </div>
 
@@ -42,8 +40,7 @@ and design that holds up at 60fps.
 This repository is the home page of Zyrix Dev — a single-page, fully static experience:
 
 ```
-zyrix-logo.png      Brand logo
-zyrix-banner.png    Repository banner
+zyrix-logo.png      Repository banner
 ```
 
 ## Project structure
