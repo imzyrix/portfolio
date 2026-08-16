@@ -1,0 +1,11 @@
+.next
+out
+node_modules
+*.log
+.opencode
+docs
+AGENTS.md
+CLAUDE.md
+opencode.json
+.vscode
+screenshots
