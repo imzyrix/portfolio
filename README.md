@@ -4,11 +4,8 @@
 
 <br/>
 
-<img src="./brand/zyrix-logo.svg" alt="Zyrix Dev logo" width="560" />
-
-<br/>
-
-<img src="./brand/zyrix-sparkle.gif" alt="pulsing sparkle" width="96" />
+<img src="./brand/zyrix-logo.svg" alt="Zyrix Dev logo" width="500" />
+<img src="./brand/zyrix-sparkle.gif" alt="pulsing sparkle" width="72" />
 
 # ⚡ ZYRIX DEV
 
