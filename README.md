@@ -46,6 +46,43 @@ zyrix-logo.png      Brand logo
 zyrix-banner.png    Repository banner
 ```
 
+## Project structure
+
+```
+src/
+├── app/                    Next.js App Router
+│   ├── page.tsx            Home page (single-page site)
+│   ├── layout.tsx          Global layout, loader + nav chrome
+│   ├── not-found.tsx       404 page
+│   └── globals.css         Design tokens & all styles
+├── components/             UI & experience components
+│   ├── Hero.tsx            Hero with peek play-card
+│   ├── Work.tsx            Featured work grid
+│   ├── Services.tsx        Services list
+│   ├── Studio.tsx / Vision.tsx / News.tsx / Platform.tsx
+│   ├── Stats.tsx           Animated counters
+│   ├── Contact.tsx         Contact section
+│   ├── Footer.tsx          Footer with polaroid marquee + ZYRIX wordmark
+│   ├── Experience.tsx      Loading screen
+│   ├── CornerCounter.tsx   Session-seconds counter
+│   ├── CueSound.tsx        Cue & sound
+│   ├── SiteChrome.tsx      Cursor, scroll cue, chrome
+│   └── Shape.tsx           Sparkle ✦ shape
+└── data/                   site copy & projects data
+public/assets/
+├── image/                  Work shots
+└── foreground/             SVG scenery layers
+```
+
+## Run it locally
+
+```bash
+npm install
+npm run dev        # development — http://localhost:3000
+npm run build      # production build
+npm start          # serve production build
+```
+
 ## Get in touch
 
 - **Email** — [imzyrixx@gmail.com](mailto:imzyrixx@gmail.com)
