@@ -940,6 +940,7 @@ export function initScene(canvas: HTMLCanvasElement, opts: { pageMode?: boolean 
   }
 
   let running = false;
+  let visible = true;
   let tPrev = 0;
   let clock = 0;
 
@@ -1037,9 +1038,9 @@ export function initScene(canvas: HTMLCanvasElement, opts: { pageMode?: boolean 
   let destroyed = false;
 
   function queue() {
-    if (destroyed) return;
+    if (destroyed || !running) return;
     raf = requestAnimationFrame((now) => {
-      if (destroyed) return;
+      if (destroyed || !running) return;
       render(now);
       queue();
     });
@@ -1059,7 +1060,7 @@ export function initScene(canvas: HTMLCanvasElement, opts: { pageMode?: boolean 
 
   const onVisibility = () => {
     if (document.hidden) running = false;
-    else if (!running && !destroyed) {
+    else if (!running && visible && !destroyed) {
       running = true;
       tPrev = performance.now();
       queue();
@@ -1095,6 +1096,24 @@ export function initScene(canvas: HTMLCanvasElement, opts: { pageMode?: boolean 
 
   let preloadCb: ((p: number) => void) | null = null;
 
+  function updateVisible() {
+    const y = window.scrollY;
+    const vh = window.innerHeight;
+    const hero = document.getElementById("hero");
+    const heroBottom = hero ? hero.getBoundingClientRect().bottom : vh;
+    const nowVisible = heroBottom > -vh * 0.5;
+    if (nowVisible === visible) return;
+    visible = nowVisible;
+    if (!visible && running) {
+      running = false;
+      cancelAnimationFrame(raf);
+    } else if (visible && !running && !destroyed) {
+      running = true;
+      tPrev = performance.now();
+      queue();
+    }
+  }
+
   const start = () => {
     if (destroyed) return;
     addEventListener("resize", onResize, { passive: true });
@@ -1102,6 +1121,7 @@ export function initScene(canvas: HTMLCanvasElement, opts: { pageMode?: boolean 
     addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("visibilitychange", onVisibility);
     addEventListener("load", onLoad);
+    addEventListener("scroll", updateVisible, { passive: true });
     running = true;
     tPrev = performance.now();
     RIG.intro = reduceMotion || pageMode ? 1 : 0;
@@ -1121,6 +1141,7 @@ export function initScene(canvas: HTMLCanvasElement, opts: { pageMode?: boolean 
     removeEventListener("resize", onResize);
     removeEventListener("pointermove", onPointer);
     removeEventListener("scroll", onScroll);
+    removeEventListener("scroll", updateVisible);
     document.removeEventListener("visibilitychange", onVisibility);
     removeEventListener("load", onLoad);
     scene.traverse((obj) => {

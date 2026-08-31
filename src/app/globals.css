@@ -6799,3 +6799,11 @@ h3 {
   .spk-hero { right: -14px; top: 8%; opacity: 0.7; }
   .spk-svc, .spk-vis { display: none; }
 }
+/* Global reduced-motion safety net — pause all infinite decor animations */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+  }
+}

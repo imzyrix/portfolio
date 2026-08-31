@@ -1,20 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function CornerCounter() {
-  const [secs, setSecs] = useState(0);
+  const ref = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
-    const t = setInterval(() => setSecs((s) => s + 1), 1000);
+    const node = ref.current;
+    let secs = 0;
+    const t = setInterval(() => {
+      secs += 1;
+      if (node) node.textContent = String(secs).padStart(4, "0");
+    }, 1000);
     return () => clearInterval(t);
   }, []);
 
-  const label = String(secs).padStart(4, "0");
-
   return (
     <div className="corner-count" aria-hidden="true">
-      <b>{label}</b>
+      <b ref={ref}>0000</b>
       <span>in the dark</span>
     </div>
   );
