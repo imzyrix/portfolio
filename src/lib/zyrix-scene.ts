@@ -1097,7 +1097,6 @@ export function initScene(canvas: HTMLCanvasElement, opts: { pageMode?: boolean 
   let preloadCb: ((p: number) => void) | null = null;
 
   function updateVisible() {
-    const y = window.scrollY;
     const vh = window.innerHeight;
     const hero = document.getElementById("hero");
     const heroBottom = hero ? hero.getBoundingClientRect().bottom : vh;
@@ -1127,6 +1126,7 @@ export function initScene(canvas: HTMLCanvasElement, opts: { pageMode?: boolean 
     RIG.intro = reduceMotion || pageMode ? 1 : 0;
     RIG.revealed = reduceMotion || pageMode ? 1.2 : 0;
     queue();
+    updateVisible();
     let p = 0;
     const tick = setInterval(() => {
       p = Math.min(1, p + 0.16);
