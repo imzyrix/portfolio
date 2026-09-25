@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 export default function CornerCounter() {
-  const ref = useRef<HTMLHeadingElement>(null);
+  const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const node = ref.current;
